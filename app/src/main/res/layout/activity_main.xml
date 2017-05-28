@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff9c4"
+    android:orientation="vertical"
+    tools:context="com.agh.gomoku.MainActivity">
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="34sp" />
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/image_switcher"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <GridView
+            android:id="@+id/grid_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnWidth="60dp"
+            android:numColumns="13" />
+
+        <GridView
+            android:id="@+id/dots_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:columnWidth="60dp"
+            android:numColumns="13" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/od_nowa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="odNowa"
+        android:text="Od nowa"
+        android:visibility="gone"
+        android:background="@android:color/transparent"/>
+
+
+</LinearLayout>

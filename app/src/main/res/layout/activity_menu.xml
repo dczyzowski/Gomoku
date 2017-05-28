@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFF9C4"
+    tools:context="com.agh.gomoku.MenuActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/game_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="72sp"
+            android:layout_margin="16dp"
+            android:text="GOMOKU"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/easy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MAŁA PLANSZA"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/medium"
+            android:layout_alignStart="@+id/medium"
+            android:background="@android:color/transparent"
+            android:onClick="onEasy"/>
+
+        <Button
+            android:id="@+id/medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/easy"
+            android:text="ŚREDNIA PLANSZ"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:onClick="onMedium"/>
+
+        <Button
+            android:id="@+id/hard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DUŻA PLANSZ"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/medium"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:onClick="onHard"/>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
